@@ -1,0 +1,47 @@
+﻿<Page x:Class="WpfApp2.Views.Page4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WpfApp2.Views"
+      mc:Ignorable="d"
+      Title="Page4" Height="640.112" Width="722.006">
+
+    <Grid RenderTransformOrigin="0.656,0.499" Margin="18,0,10,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Student Name" HorizontalAlignment="Left" Margin="101,59,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
+        <TextBox x:Name="txtName1"  HorizontalAlignment="Left" Height="23" Margin="101,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Age" HorizontalAlignment="Left" Margin="233,59,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
+        <TextBox x:Name="txtAge1" MaxLength="5"  PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="23" Margin="233,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button  Name="Cancel" Content="Cancel" HorizontalAlignment="Left" Margin="308,296,0,0" VerticalAlignment="Top" Width="75" Height="22" Click="Cancel_Click" />
+        <Button Content="Save" HorizontalAlignment="Left" Margin="198,296,0,0" VerticalAlignment="Top" Width="75" Height="22" Click="Save_Click"/>
+        <TextBox x:Name="txtName2" HorizontalAlignment="Left" Height="23" Margin="101,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtAge2"  MaxLength="5" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="23" Margin="233,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="Gender" Content="Gender" HorizontalAlignment="Left" Margin="366,59,0,0" VerticalAlignment="Top" Height="26" Width="120"/>
+        <TextBox x:Name="txtGen1" HorizontalAlignment="Left" Height="23" Margin="366,98,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtGen2"  HorizontalAlignment="Left" Height="23" Margin="366,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="ddlCount" HorizontalAlignment="Left" Margin="559,10,0,0" VerticalAlignment="Top" Width="120" Text="Select Option" SelectionChanged="DdlCount_SelectionChanged">
+            <!--<ComboBoxItem Content="Coffie"></ComboBoxItem>
+            <ComboBoxItem Content="Tea"></ComboBoxItem>
+            <ComboBoxItem Content="Orange Juice" ></ComboBoxItem>
+            <ComboBoxItem Content="Milk"></ComboBoxItem>
+            <ComboBoxItem Content="Iced Tea"></ComboBoxItem>
+            <ComboBoxItem Content="Mango Shake"></ComboBoxItem>-->
+
+            <ComboBoxItem IsSelected="True" Name="cbb1">Option1</ComboBoxItem>
+            <ComboBoxItem Name="cbb2">Option2</ComboBoxItem>
+            <ComboBoxItem Name="cbb3">Option3</ComboBoxItem>
+        </ComboBox>
+        <StackPanel HorizontalAlignment="Left" Height="220" Margin="23,47,0,0" VerticalAlignment="Top" Width="629"/>
+        <TextBox x:Name="txtName3" HorizontalAlignment="Left" Height="23" Margin="101,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="txtAge3" MaxLength="5" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="23" Margin="233,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="txtGen3"  HorizontalAlignment="Left" Height="23" Margin="366,189,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="txtName4" HorizontalAlignment="Left" Height="23" Margin="101,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="txtAge4" MaxLength="5" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="23" Margin="233,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+        <TextBox x:Name="txtGen4"  HorizontalAlignment="Left" Height="23" Margin="366,231,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Visibility="Hidden"/>
+
+    </Grid>
+</Page>
